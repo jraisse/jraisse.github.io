@@ -3,24 +3,34 @@
 <head>
   <style>
 
-div.container0 {
-    height: 10em;
-    position: relative }
-div.container0 p {
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+.frame {
+    height: 25px;      /* equals max image height */
+    width: 160px;
+    border: 1px solid red;
+    white-space: nowrap;
+    
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-height: 25px;
+    max-width: 160px;
+}
   
   </style>
 </head>
 <body>
 
-<div style=container0>
-  <img src="https://avatars0.githubusercontent.com/u/13109544?v=3&s=460" alt="JR">
+<div class=frame>
+    <span class="helper"></span><img src="https://avatars0.githubusercontent.com/u/13109544?v=3&s=460" alt="JR">
 </div>
 
 </body>
